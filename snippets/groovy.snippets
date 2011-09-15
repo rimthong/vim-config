@@ -78,6 +78,8 @@ snippet as
 	assert ${1:test} : "${2:Failure message}";${3}
 snippet as400
 	Sql sql = Sql.newInstance("jdbc:as400://${1:as400dev;naming=system}", "${2:sqldev}", "${3:gbe1pc}", "com.ibm.as400.access.AS400JDBCDriver")
+snippet implog
+	import java.util.logging.*
 snippet logger
 	Logger log = Logger.getLogger("${1:ca.qc.barreau.logger}")
 snippet logi
