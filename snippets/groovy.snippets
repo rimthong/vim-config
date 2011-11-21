@@ -83,15 +83,15 @@ snippet implog
 snippet logger
 	Logger log = Logger.getLogger("${1:ca.qc.barreau.logger}")
 snippet logi
-	log.logp(Level.INFO, "${1:`Filename()`}", "${2:main}", "${3}") 
+	log.info(${1})
 snippet logf
-	log.logp(Level.FINE, "${1:`Filename()`}", "${2:main}", "${3}") 
+	log.fine(${1})
 snippet logff
-	log.logp(Level.FINER, "${1:`Filename()`}", "${2:main}", "${3}") 
+	log.finer(${1})
 snippet logfff
-	log.logp(Level.FINEST, "${1:`Filename()`}", "${2:main}", "${3}") 
+	log.finest(${1})
 snippet logs
-	log.logp(Level.SEVERE, "${1:`Filename()`}", "${2:main}", "${3}") 
+	log.severe(${1})
 snippet logen
 	log.entering("${1:`Filename()`}","${2:main}")
 snippet logex
